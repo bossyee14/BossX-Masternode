@@ -3024,7 +3024,7 @@
                 const currentRoomMessages = messages.filter(msg => msg.room === currentRoom);
                 return (
                     h('div', { className: "min-h-screen bg-black text-white p-4 flex items-center justify-center" },
-                        h('div', { className: "w-full max-w-7xl" },
+                        h('div', { className: "w-full max-w-full" },
                             // Back Button
                             h('button',
                                 {
@@ -3034,7 +3034,7 @@
                                 "← Kembali ke Dashboard"
                             ),
                             // Chat Room Card dengan Glowing Border
-                            h('div', { className: "relative bg-gray-900/90 border border-gray-700 backdrop-blur-sm h-[800px] overflow-hidden rounded-3xl glowing-border" },
+                            h('div', { className: "relative bg-gray-900/90 border border-gray-700 backdrop-blur-sm h-[calc(100vh-100px)] overflow-hidden rounded-3xl glowing-border" },
                                 h('div', { className: "relative bg-gray-900/95 rounded-3xl h-full" },
                                     // Header
                                     h('div', { className: "bg-black/50 border-b border-gray-700 p-6" },
